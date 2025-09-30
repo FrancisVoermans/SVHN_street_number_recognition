@@ -31,13 +31,6 @@ The notebook includes the following components:
 5. **Visualization**
    - Draw predicted bounding boxes and recognized digits on test images.
 
-## Requirements
-
-Install dependencies (Python 3.8+ recommended):
-
-```bash
-pip install torch torchvision matplotlib numpy pillow h5py tqdm
-
 Model Details
 
 Digit classifier (SmallCNN):
@@ -50,4 +43,13 @@ Detector (Faster R-CNN):
 Acknowledgements
   - SVHN dataset (http://ufldl.stanford.edu/housenumbers/)
   - PyTorch and TorchVision for deep learning models.
+
+## Requirements
+
+Install dependencies (Python 3.8+ recommended):
+
+```bash
+pip install torch torchvision matplotlib numpy pillow h5py tqdm
+
+
 
