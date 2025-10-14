@@ -1,8 +1,8 @@
 # SVHN_street_number_recognition
 Notebook for machine learning on SVHN house numbers to make a model for recognizing house numbers
 
-This notebook build a model to recognize street numbers from images using the [SVHN (Street View House Numbers) dataset](http://ufldl.stanford.edu/housenumbers/).  
-It combines **object detection** (to find digits in a house number image) with **classification** (to recognize each digit).
+This notebook builds a model to recognize street numbers from images using the [SVHN (Street View House Numbers) dataset](http://ufldl.stanford.edu/housenumbers/).  
+It combines two models: one for **object detection** (to find digits in a house number image) with one for **classification** (to recognize each digit). Both models are CNN (convolutional neural networks).
 
 ## Structure
 
@@ -34,11 +34,12 @@ The notebook includes the following components:
 Model Details
 
 Digit classifier (SmallCNN):
-  - Convolutional neural network with 10 output classes.
+  - Convolutional neural network with 10 output classes to classify the digits.
   - Trained on cropped SVHN digits.
 
 Detector (Faster R-CNN):
-  - Fine-tuned to detect digits in full house number images.
+  - Convolutional neural network with 2 output classes to draw the bounding boxes around digits.
+  - Trained on SVHN street number images.
 
 Acknowledgements
   - SVHN dataset (http://ufldl.stanford.edu/housenumbers/)
